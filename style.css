@@ -64,6 +64,10 @@ body {
     text-align: center;
 }
 
+#contacts .section-title {
+    font-size: 2rem;
+}
+
 .footer {
     padding: 5px;
 }
@@ -112,6 +116,12 @@ body {
     box-shadow: none;
 }
 
+#avatar img {
+    max-width: 80%;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35); 
+    border-radius: 200px;
+}
+
 #location::before {
     content: url('assets/img/location.png');
     position: absolute;
@@ -140,13 +150,22 @@ body {
     top: -2px;
 }
 
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 1035px) {
     .section {
         width: 100%;
-        padding: 0 15px;
-        border-radius: 30px;
-        border: 3px solid #aaa;
-        box-shadow: 5px 5px 10px 0 rgba(50, 50, 50, 0.2);
         margin: 10px 0;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
     }
 }
