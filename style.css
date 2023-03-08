@@ -28,7 +28,7 @@
 
 html {
     scroll-behavior: smooth;
-    background-image: url('assets/img/background.png');
+    background-image: url('assets/img/black-wallpaper.avif');
     background-repeat: repeat; 
   }
 
@@ -68,6 +68,46 @@ body {
     font-size: 2rem;
 }
 
+.skills_item {
+    padding-left: 35px;
+    position: relative;
+}
+
+.skills_item::before {
+    content: '';
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 30px;
+    height: 30px;
+}
+
+#skills_html::before {
+    background-image: url('./assets/img/HTML_logo.png');
+}
+
+#skills_css::before {
+    background-image: url('./assets/img/CSS_logo.png');
+}
+
+#skills_js::before {
+    background-image: url('./assets/img/JS_logo.png');
+}
+
+#skills_ts::before {
+    background-image: url('./assets/img/typescript_logo.png');
+}
+
+#skills_git::before {
+    background-image: url('./assets/img/git_logo.png');
+}
+
+#skills_angular::before {
+    background-image: url('./assets/img/angular_logo.png');
+}
+
 .footer {
     padding: 5px;
 }
@@ -90,7 +130,7 @@ body {
     padding: 0 20px;
     line-height: 50px;
     text-decoration: none;
-    color: #333333;
+    color: #cccccc;
     font-size: 1.5rem;
     transition: .3s;
 }
@@ -110,16 +150,16 @@ body {
 #avatar {
     display: flex; 
     justify-content: center;
-    padding: 5px;
     border: none;
     background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
 }
 
 #avatar img {
-    max-width: 80%;
-    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35); 
-    border-radius: 200px;
+    max-width: 100%;
+    border: 3px solid #aaa;
+    border-radius: 30px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35);
 }
 
 #location::before {
