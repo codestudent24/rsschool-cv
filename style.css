@@ -68,6 +68,14 @@ body {
     font-size: 2rem;
 }
 
+#contacts span {
+    color: #777777;
+}
+
+#courses p {
+    line-height: 1.5rem;
+}
+
 .skills_item {
     padding-left: 35px;
     position: relative;
@@ -123,6 +131,15 @@ body {
     flex-wrap: wrap;
 }
 
+.footer .container {
+    justify-content: space-around;
+}
+
+.footer .container a:nth-child(3) {
+    position: relative; 
+    top: 20px;
+}
+
 .nav-list {
     display: flex;
     justify-content: flex-end;
@@ -146,6 +163,11 @@ body {
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .contacts-info {
