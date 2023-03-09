@@ -1,0 +1,220 @@
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Roboto'),
+		url('assets/fonts/Roboto-Regular.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Roboto'),
+		url('assets/fonts/Roboto-Bold.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: normal;
+	src: local('Roboto'),
+		url('assets/fonts/Roboto-Italic.ttf') format('ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-image: url('assets/img/black-wallpaper.avif');
+    background-repeat: repeat; 
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.section {
+    width: 48%;
+    padding: 0 15px;
+    border-radius: 30px;
+    border: 3px solid #aaa;
+    box-shadow: 5px 5px 10px 0 rgba(50, 50, 50, 0.2);
+    margin: 10px 10px;
+    background-color: #eee;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #829985;
+    text-align: center;
+}
+
+#contacts .section-title {
+    font-size: 2rem;
+}
+
+.skills_item {
+    padding-left: 35px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.skills_item::before {
+    content: '';
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 30px;
+    height: 30px;
+}
+
+#skills_html::before {
+    background-image: url('./assets/img/HTML_logo.png');
+}
+
+#skills_css::before {
+    background-image: url('./assets/img/CSS_logo.png');
+}
+
+#skills_js::before {
+    background-image: url('./assets/img/JS_logo.png');
+}
+
+#skills_ts::before {
+    background-image: url('./assets/img/typescript_logo.png');
+}
+
+#skills_git::before {
+    background-image: url('./assets/img/git_logo.png');
+}
+
+#skills_angular::before {
+    background-image: url('./assets/img/angular_logo.png');
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #eee;
+    border-top: 3px solid #aaa;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 1.5rem;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #777777;
+}
+
+ul {
+    list-style: none;
+}
+
+.contacts-info {
+    position: relative;
+    max-width: fit-content;
+    line-height: 1rem;
+    padding-bottom: 15px;
+}
+
+#avatar {
+    display: flex; 
+    justify-content: center;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+
+#avatar img {
+    max-width: 100%;
+    border: 3px solid #aaa;
+    border-radius: 30px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35);
+}
+
+
+#location::before {
+    content: url('assets/img/location.png');
+    position: absolute;
+    left: -25px;
+    top: -2px;
+}
+
+#telephone::before {
+    content: url('assets/img/whatsapp.png');
+    position: absolute;
+    left: -25px;
+    top: -2px;
+}
+
+#github::before {
+    content: url('assets/img/github.png');
+    position: absolute;
+    left: -25px;
+    top: -2px;
+}
+
+#email::before {
+    content: url('assets/img/email.png');
+    position: absolute;
+    left: -25px;
+    top: -2px;
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1035px) {
+    .section {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+    }
+}
