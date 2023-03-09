@@ -29,7 +29,7 @@
 html {
     scroll-behavior: smooth;
     background-image: url('assets/img/black-wallpaper.avif');
-    background-repeat: repeat; 
+    background-repeat: repeat;
   }
 
 body {
@@ -136,7 +136,7 @@ body {
 }
 
 .footer .container a:nth-child(3) {
-    position: relative; 
+    position: relative;
     top: 20px;
 }
 
@@ -178,7 +178,7 @@ a {
 }
 
 #avatar {
-    display: flex; 
+    display: flex;
     justify-content: center;
     border: none;
     background-color: rgba(0, 0, 0, 0);
