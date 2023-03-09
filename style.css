@@ -29,7 +29,7 @@
 html {
     scroll-behavior: smooth;
     background-image: url('assets/img/black-wallpaper.avif');
-    background-repeat: repeat; 
+    background-repeat: repeat;
   }
 
 body {
@@ -66,6 +66,14 @@ body {
 
 #contacts .section-title {
     font-size: 2rem;
+}
+
+#contacts span {
+    color: #777777;
+}
+
+#courses p {
+    line-height: 1.5rem;
 }
 
 .skills_item {
@@ -123,6 +131,15 @@ body {
     flex-wrap: wrap;
 }
 
+.footer .container {
+    justify-content: space-around;
+}
+
+.footer .container a:nth-child(3) {
+    position: relative;
+    top: 20px;
+}
+
 .nav-list {
     display: flex;
     justify-content: flex-end;
@@ -148,6 +165,11 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .contacts-info {
     position: relative;
     max-width: fit-content;
@@ -156,7 +178,7 @@ ul {
 }
 
 #avatar {
-    display: flex; 
+    display: flex;
     justify-content: center;
     border: none;
     background-color: rgba(0, 0, 0, 0);
